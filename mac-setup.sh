@@ -151,7 +151,9 @@ defaults write NSGlobalDomain com.apple.sound.beep.volume -float 0
 # Battery:
 #   On Battery: Automatic
 #   Power Adapter: High Power
-# Docks: Automatically hide and show the Dock (I never use it)
+# Desktop & Docks:
+#   Automatically hide and show the Dock (I never use it)
+#   Desktop & Stage Manager : Show item : disable all (clean Desktop)
 # Menu bar from left to right:
 #   MenubarUSB, Docker, Maccy, Handy, TRex, Stats (CPU, GPU, Memory, Power), WiFi, Battery, AlDente, Control Center, HH:MM:SS
 # Keyboard:
