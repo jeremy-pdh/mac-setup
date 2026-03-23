@@ -142,6 +142,9 @@ sdkmanager --licenses
 defaults -currentHost write -globalDomain NSStatusItemSpacing -int 6
 defaults -currentHost write -globalDomain NSStatusItemSelectionPadding -int 6
 
+# Disable annoying System sounds
+defaults write NSGlobalDomain com.apple.sound.beep.volume -float 0
+
 # System Settings
 # --------
 # Set language in English
@@ -190,6 +193,8 @@ defaults -currentHost write -globalDomain NSStatusItemSelectionPadding -int 6
 #   PeekX : Quick Look Extension for Folder and Markdown
 #   QuickRecorder : Screen recording
 #   HiddenBar: Hide/Manage menu bar icons
+#   BoringNotch: Use Notch to show Music and Calendar
+#   AltTab : Window switcher that shows all windows
 #
 #
 # Others
@@ -208,7 +213,7 @@ defaults -currentHost write -globalDomain NSStatusItemSelectionPadding -int 6
 #     Color Picker
 #     Clipboard History
 #     Copy Path or URL
-#     GitHub
+#     GitHub (Grant permission to access Organizations in github.com)
 #     Google Tranlate
 #     Identify Song
 #     Image Modification
