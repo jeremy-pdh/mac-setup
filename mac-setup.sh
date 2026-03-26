@@ -14,7 +14,8 @@ brew install --cask visual-studio-code \
                     miniconda \
                     menubarusb \
                     handy \
-                    finetune
+                    finetune \
+                    vlc
 
 
 brew install    act \
@@ -46,6 +47,7 @@ brew install    act \
                 pillow \
                 protobuf@29 \
                 mysql \
+                mysql@8.4 \
                 mysql-client \
                 rbenv \
                 scrcpy \
@@ -69,9 +71,11 @@ brew install    act \
                 arm-none-eabi-gdb \
                 starship \
                 cocoapods \
-                zbar
+                zbar \
+                gh
 
 brew link --overwrite --force protobuf@29 # Link specific version
+brew link --overwrite --force mysql@8.4 # Link specific version
 
 # nvm config
 mkdir ~/.nvm

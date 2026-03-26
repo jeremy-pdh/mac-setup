@@ -109,6 +109,12 @@ alias ls='lsd'
 alias yt-mp3='yt-dlp --extract-audio --audio-format mp3'
 alias yt='yt-dlp'
 
+# History
+alias h='history'
+alias hl='history | less'
+alias hs='history | grep'
+alias hsi='history | grep -i'
+
 # Fuzzy finder CTRL+T
 source <(fzf --zsh)
 
