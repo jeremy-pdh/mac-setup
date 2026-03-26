@@ -72,7 +72,8 @@ brew install    act \
                 starship \
                 cocoapods \
                 zbar \
-                gh
+                gh \
+                meetingbar
 
 brew link --overwrite --force protobuf@29 # Link specific version
 brew link --overwrite --force mysql@8.4 # Link specific version
