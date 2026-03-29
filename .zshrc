@@ -134,7 +134,7 @@ eval "$(pyenv init - zsh)"
 . "$HOME/.local/bin/env"
 
 # The following lines have been added by Docker Desktop to enable Docker CLI completions.
-fpath=(/Users/jeremy/.docker/completions $fpath)
+fpath=($HOME/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
@@ -157,7 +157,7 @@ unset __conda_setup
 # Zoxide
 eval "$(zoxide init zsh)"
 # pnpm
-export PNPM_HOME="/Users/jeremy/Library/pnpm"
+export PNPM_HOME="$HOME/Library/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;

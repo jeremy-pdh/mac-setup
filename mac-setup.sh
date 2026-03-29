@@ -1,10 +1,11 @@
+# Install Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
 # Install ohmyzsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
-# Install Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 brew tap rafaelswi/menubarusb # Tap the repository for menubarusb
 
@@ -15,7 +16,11 @@ brew install --cask visual-studio-code \
                     menubarusb \
                     handy \
                     finetune \
-                    vlc
+                    vlc \
+                    iterm2 \
+                    raycast \
+                    docker-desktop \
+                    insomnia
 
 
 brew install    act \
@@ -73,7 +78,8 @@ brew install    act \
                 cocoapods \
                 zbar \
                 gh \
-                meetingbar
+                meetingbar \
+                stats
 
 brew link --overwrite --force protobuf@29 # Link specific version
 brew link --overwrite --force mysql@8.4 # Link specific version
@@ -87,10 +93,10 @@ nvm use --lts
 curl -fsSL https://get.pnpm.io/install.sh | sh
 
 # Node.js global packages
-pnpm install -g @angular/cli
-pnpm i -g @ionic/cli
-pnpm i -g native-run
-pnpm i -g md-to-pdf
+pnpm install -g @angular/cli \
+                @ionic/cli\
+                native-run \
+                md-to-pdf \
 npm i -g cordova@10 # Not working with pnpm
 
 # rbenv config
@@ -106,8 +112,8 @@ pyenv global 3.13
 
 # jenv
 jenv add /opt/homebrew/opt/openjdk@17
-jenv add /opt/homebrew/opt/openjdk@25
 jenv add /opt/homebrew/opt/openjdk@21
+jenv add /opt/homebrew/opt/openjdk@25
 jenv global 25
 jenv doctor # Check for any issues with jenv setup
 
